@@ -6,70 +6,65 @@ Is project ka main goal text se language identify karna hai using Natural Langua
 
 Humne ek multilingual dataset use kiya jisme English, French, Spanish, Hindi, Tamil jaise kaafi languages available hain.
 
+
+
+
 📂 Dataset
 
-Dataset ka naam: Language Detection Dataset
+- Dataset ka naam: Language Detection Dataset
+- Columns:
+  - Text → Input sentence
+  - Language → Target language label
 
-Columns:
 
-Text → Input sentence
 
-Language → Target language label
 
 ⚙️ Methodology
 
-Text Cleaning
+1. Text Cleaning
+- Text ko lowercase kiya
+- Special characters aur numbers remove kiye
 
-Text ko lowercase kiya
+2. Feature Extraction
+- TF-IDF Vectorizer ka use kiya
+- Text ko numerical form me convert kiya
 
-Special characters aur numbers remove kiye
+3. Model Training
+- Logistic Regression model use kiya
+- Dataset ko train-test split kiya (80%-20%)
 
-Feature Extraction
+4. Model Evaluation
+- Accuracy score calculate kiya
 
-TF-IDF Vectorizer ka use kiya
 
-Text ko numerical form me convert kiya
 
-Model Training
-
-Logistic Regression model use kiya
-
-Dataset ko train-test split kiya (80%-20%)
-
-Model Evaluation
-
-Accuracy score calculate kiya
 
 📊 Results
+- Model Accuracy: ~73%
+- Model multiple languages ko achhi accuracy ke saath predict karta hai
 
-Model Accuracy: ~73%
 
-Model multiple languages ko achhi accuracy ke saath predict karta hai
+
 
 🧪 Sample Prediction
-
-Input:
+- Input:
 Bonjour, comment allez-vous?
 
-Output:
+- Output:
 ✅ French
 
+
+
+
 🚀 Conclusion
+- NLP techniques se hum successfully language detection kar sakte hain
+- TF-IDF + Logistic Regression ek simple aur effective approach hai
+- Ye project NLP basics, text preprocessing aur ML workflow ko clearly demonstrate karta hai
 
-NLP techniques se hum successfully language detection kar sakte hain
-
-TF-IDF + Logistic Regression ek simple aur effective approach hai
-
-Ye project NLP basics, text preprocessing aur ML workflow ko clearly demonstrate karta hai
 
 🧠 Skills Used
-
-Python
-
-NLP
-
-TF-IDF
-
-Logistic Regression
-
-Scikit-learn
+- Python
+- NLP
+- TF-IDF
+- Logistic Regression
+- Scikit-learn
